@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Motor XYZ</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logomotor-removebg-preview.png"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gaya khusus untuk logo */
+        .navbar-brand img {
+            width: 50px; /* Sesuaikan dengan lebar yang diinginkan */
+            height: auto; /* Untuk menjaga proporsi */
+        }
+
+        .container1 {
+            background-color: black; /* Mengubah warna latar belakang menjadi hitam */
+            color: white; /* Mengubah warna teks menjadi putih untuk kontras */
+            padding: 10px; /* Menambahkan padding untuk ruang di sekitar teks */
+        }
+        /* Bagian CSS */
+.gallery-image {
+    width: 100%;
+    height: auto;
+}
+
+body{margin-top:20px;}
+.footer_area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
+}
+.footer_area .row {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+.footer_area .row .col,
+.footer_area .row .col-1,
+.footer_area .row .col-10,
+.footer_area .row .col-11,
+.footer_area .row .col-12,
+.footer_area .row .col-2,
+.footer_area .row .col-3,
+.footer_area .row .col-4,
+.footer_area .row .col-5,
+.footer_area .row .col-6,
+.footer_area .row .col-7,
+.footer_area .row .col-8,
+.footer_area .row .col-9,
+.footer_area .row .col-auto,
+.footer_area .row .col-lg,
+.footer_area .row .col-lg-1,
+.footer_area .row .col-lg-10,
+.footer_area .row .col-lg-11,
+.footer_area .row .col-lg-12,
+.footer_area .row .col-lg-2,
+.footer_area .row .col-lg-3,
+.footer_area .row .col-lg-4,
+.footer_area .row .col-lg-5,
+.footer_area .row .col-lg-6,
+.footer_area .row .col-lg-7,
+.footer_area .row .col-lg-8,
+.footer_area .row .col-lg-9,
+.footer_area .row .col-lg-auto,
+.footer_area .row .col-md,
+.footer_area .row .col-md-1,
+.footer_area .row .col-md-10,
+.footer_area .row .col-md-11,
+.footer_area .row .col-md-12,
+.footer_area .row .col-md-2,
+.footer_area .row .col-md-3,
+.footer_area .row .col-md-4,
+.footer_area .row .col-md-5,
+.footer_area .row .col-md-6,
+.footer_area .row .col-md-7,
+.footer_area .row .col-md-8,
+.footer_area .row .col-md-9,
+.footer_area .row .col-md-auto,
+.footer_area .row .col-sm,
+.footer_area .row .col-sm-1,
+.footer_area .row .col-sm-10,
+.footer_area .row .col-sm-11,
+.footer_area .row .col-sm-12,
+.footer_area .row .col-sm-2,
+.footer_area .row .col-sm-3,
+.footer_area .row .col-sm-4,
+.footer_area .row .col-sm-5,
+.footer_area .row .col-sm-6,
+.footer_area .row .col-sm-7,
+.footer_area .row .col-sm-8,
+.footer_area .row .col-sm-9,
+.footer_area .row .col-sm-auto,
+.footer_area .row .col-xl,
+.footer_area .row .col-xl-1,
+.footer_area .row .col-xl-10,
+.footer_area .row .col-xl-11,
+.footer_area .row .col-xl-12,
+.footer_area .row .col-xl-2,
+.footer_area .row .col-xl-3,
+.footer_area .row .col-xl-4,
+.footer_area .row .col-xl-5,
+.footer_area .row .col-xl-6,
+.footer_area .row .col-xl-7,
+.footer_area .row .col-xl-8,
+.footer_area .row .col-xl-9,
+.footer_area .row .col-xl-auto {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.single-footer-widget {
+    position: relative;
+    z-index: 1;
+}
+.single-footer-widget .copywrite-text a {
+    color: #747794;
+    font-size: 1rem;
+}
+.single-footer-widget .copywrite-text a:hover,
+.single-footer-widget .copywrite-text a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .widget-title {
+    margin-bottom: 1.5rem;
+}
+.single-footer-widget .footer_menu li a {
+    color: #747794;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1rem;
+}
+.single-footer-widget .footer_menu li a:hover,
+.single-footer-widget .footer_menu li a:focus {
+    color: #3f43fd;
+}
+.single-footer-widget .footer_menu li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer_social_area {
+    position: relative;
+    z-index: 1;
+}
+.footer_social_area a {
+    border-radius: 50%;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    display: inline-block;
+    background-color: #f5f5ff;
+    line-height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+.footer_social_area a i {
+    line-height: 36px;
+}
+.footer_social_area a:hover,
+.footer_social_area a:focus {
+    color: #ffffff;
+}
+
+@-webkit-keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes bi-cycle {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+ol li, ul li {
+    list-style: none;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+    </style>
+</head>
+<body style="overflow-x: auto;">
+    <nav>
+        <div class="container1">
+            <a>welcome to Club Motor XYZ</a>
+            <a href=""></a>
+        </div>
+    </nav>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="beranda.html"><img src="images/logomotor-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#visi-misi">Visi Misi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk-jasa">Produk / Jasa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#daftar-klien">Daftar Klien</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak-kami">Kontak Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/acara.jpeg" class="gallery-image img-fluid d-block w-100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Kegiatan kami</h5>
+                    <p>Tur bersama anggota angkatan pertama</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel1.jpeg" class="gallery-image img-fluid d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Tur rutin</h5>
+                    <p>perjalanan opsional bersama dengan anggota yang mendaftarkan</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel3.jpeg" class="gallery-image img-fluid d-block w-100" alt="Image 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
+    <h2>Tentang Kami</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam vestibulum tellus, non accumsan turpis suscipit id. Ut viverra metus sit amet leo tristique, vitae fringilla sem tincidunt. Aliquam erat volutpat. Proin ac justo quis odio lobortis convallis. Vivamus lobortis, libero id placerat ullamcorper, justo est fermentum odio, vel malesuada mauris leo nec nisi. Fusce fermentum, dui non tincidunt venenatis, justo lacus iaculis orci, id interdum magna arcu eu dui. Integer lobortis dapibus risus, eget commodo leo eleifend at. Sed consectetur leo vitae nibh lobortis, id varius enim convallis. Sed vel magna ipsum. Sed quis risus ac arcu ultrices varius. Nunc varius, sapien et consequat scelerisque, odio justo varius justo, vel venenatis elit nisl sit amet nulla. Sed at orci in nulla posuere aliquam. In hac habitasse platea dictumst. Sed dignissim nunc quis ex venenatis scelerisque. Sed eget viverra purus.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse ultrices, ex id aliquam pharetra, urna nisi vestibulum justo, sit amet hendrerit urna mi eget nisi. Sed luctus velit vitae arcu malesuada, at ultrices nisi rhoncus. Mauris vel est diam. In vitae hendrerit diam, in pellentesque risus. Ut eget dui vehicula, placerat metus a, faucibus magna. Vivamus interdum, justo et dignissim eleifend, ligula leo ullamcorper eros, eu volutpat purus justo nec felis. Sed hendrerit ipsum et nibh sodales, non faucibus velit malesuada. In hac habitasse platea dictumst. Etiam efficitur nisi ac purus lacinia tincidunt. Donec quis elit quis leo tempus tincidunt. Phasellus sed purus at magna congue viverra. Nam quis odio vitae neque ultricies pulvinar. Integer auctor arcu et risus congue fermentum. Sed sed urna vel eros maximus fermentum.
+    </p>
+    <section id="visi-misi">
+        <div class="container">
+            <h2>Visi Misi</h2>
+            <p>Visi kami adalah menjadi pusat komunitas motor sport terkemuka yang menyediakan pengalaman terbaik bagi para anggota kami. Misi kami adalah memberikan layanan terbaik, menyelenggarakan acara berkualitas, dan membangun hubungan yang kuat di antara para penggemar motor sport.</p>
+        </div>
+    </section>
+
+    <section id="produk-jasa" style="background-color: #f8f9fa;">
+        <div class="container-fluid pt-5 pb-5">
+            <h2 class="text-center mb-4">Produk / Jasa</h2>
+            <div class="row d-flex flex-nowrap overflow-auto">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="images/jasa1.jpeg" class="card-img-top img-fluid" alt="Produk 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Perawatan Motor</h5>
+                            <p class="card-text">Kami menyediakan layanan perawatan berkualitas tinggi untuk menjaga performa dan keamanan motor Anda.</p>
+                            <a href="produk1.html" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="images/suku_cadang.jpeg" class="card-img-top img-fluid" alt="Produk 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Suku Cadang</h5>
+                            <p class="card-text">Kami menyediakan berbagai suku cadang berkualitas untuk berbagai jenis motor sport.</p>
+                            <a href="produk2.html" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="images/acara.jpeg" class="card-img-top img-fluid" alt="Produk 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Acara dan Tur</h5>
+                            <p class="card-text">Kami menyelenggarakan acara dan tur keliling bersama komunitas untuk pengalaman motor yang tak terlupakan.</p>
+                            <a href="produk3.html" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan kartu produk lainnya di sini -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Overlay untuk memperbesar gambar -->
+    <div id="overlay">
+        <img id="overlay-image" src="" alt="">
+    </div>
+    
+    <style>
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            text-align: center;
+        }
+    
+        #overlay img {
+            margin-top: 10%;
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+    
+    <script>
+        // Tangkap semua gambar dengan kelas 'gallery-image'
+        var galleryImages = document.querySelectorAll('.gallery-image');
+    
+        // Tambahkan event listener untuk setiap gambar
+        galleryImages.forEach(function(image) {
+            image.addEventListener('click', function() {
+                // Ambil URL gambar saat gambar di-klik
+                var imageURL = this.src;
+    
+                // Tampilkan overlay dan gambar yang diperbesar
+                document.getElementById('overlay').style.display = 'block';
+                document.getElementById('overlay-image').src = imageURL;
+            });
+        });
+    
+        // Sembunyikan overlay saat overlay atau gambar di-klik
+        document.getElementById('overlay').addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+    </script>
+    
+
+    <section id="daftar-klien">
+        <div class="container">
+            <h2>Daftar Klien</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="images/hanes.jpg" class="card-img-top" alt="Gambar Klien 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Johannes Sipayung</h5>
+                            <p class="card-text">"AAAKUUUU TAMAR BOY"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="images/gilberd-.jpg" class="card-img-top" alt="Gambar Klien 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Gilbert Siboro</h5>
+                            <p class="card-text">kulakukan demi orang yang ku cinta"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="images/foto.jpeg" class="card-img-top" alt="Gambar Klien 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Samuel</h5>
+                            <p class="card-text">Deskripsi singkat tentang klien atau mitra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="images/WhatsApp Image 2023-05-01 at 20.24.43.jpeg" class="card-img-top" alt="Gambar Klien 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Steven</h5>
+                            <p class="card-text">Deskripsi singkat tentang klien atau mitra.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan kartu klien lainnya di sini -->
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="kontak-kami">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Jika Anda memiliki pertanyaan lebih lanjut atau ingin bergabung dengan kami, jangan ragu untuk menghubungi kami melalui formulir di bawah ini:</p>
+            
+            <!-- Formulir Kontak dengan Flexbox -->
+            <div class="kontak-form">
+                <form action="/proses-pesan" method="post" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+                    <div style="flex-basis: calc(33.33% - 10px); margin-right: 10px;">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div style="flex-basis: calc(33.33% - 10px); margin-right: 10px;">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div style="flex-basis: 100%;">
+                        <label for="pesan">Pesan:</label>
+                        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    </div>
+                    <div style="flex-basis: 100%;">
+                        <button type="submit">Kirim Pesan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer_area section_padding_130_0">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget section_padding_0_130">
+                        <img src="images/logomotor-removebg-preview.png" alt="Footer Logo" class="footer-logo mb-3" style="max-width: 130px;">
+    
+                        <div class="copywrite-text mb-5">
+                            <p class="mb-0"><i class="lni-heart mr-1"></i><a class="ml-1" href="#">Club Motor XYZ</a></p>
+                            <br>
+                            <p class="mb-0" style="text-align: justify;"><i class="lni-heart mr-1"></i><a class="ml-1" href="#">Alamat: Jl. Motor No. 123, Jakarta, Indonesia.</a></p>
+                            <br>
+                        </div>
+    
+    
+                    </div>
+                </div>
+    
+    
+    
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="single-footer-widget section_padding_0_130">
+    
+                        <h5 class="widget-title">Menu Utama</h5>
+    
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">Produk / Jasa</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Daftar Klien</a></li>
+                                <li><a href="#">Kontak Kami</a></li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="col-12 col-sm-6 col-lg">
+                    <div class="single-footer-widget section_padding_0_130">
+    
+                        <h5 class="widget-title">Hubungi Kami</h5>
+    
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">Telepon : +62 123 4567 890</a></li>
+                                <li><a href="#">Email :  info@clubmotorxyz.com</a></li>
+                                <li><a href="#">Alamat : Jl. Motor No. 123, Jakarta, Indonesia.</a></li>
+                            </ul>
+                            <br>
+                            <style>
+                                .footer_social_area .fa-instagram {
+                                    color: purple;
+                                }
+                            </style>
+    
+                            <div class="footer_social_area">
+                                <a href="#" data-toggle="tooltip" data-placement="top" title data-original-title="Facebook"><i class="fa fa-facebook text-primary"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title data-original-title="Twitter"><i class="fa fa-twitter text-info"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title data-original-title="YouTube"><i class="fa fa-youtube text-danger"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="top" title data-original-title="Instagram"><i class="fa fa-instagram text-purple"></i></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
